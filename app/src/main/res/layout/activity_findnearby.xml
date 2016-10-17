@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_neaby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hopeforthehomeless.myapplication.findnearby">
+
+    <TextView
+        android:text="Find Nearby..."
+        android:fontFamily="cursive"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:onClick="restaurants"
+        android:text="Restaurants"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="#2e8b57"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:id="@+id/restaurants"
+        android:layout_alignBottom="@+id/stores"
+        android:layout_alignLeft="@+id/shelters"
+        android:layout_alignStart="@+id/shelters"
+        android:layout_alignTop="@+id/stores" />
+
+    <Button
+        android:onClick="shelters"
+        android:text="Shelters"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="#2e8b57"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:id="@+id/shelters"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/stores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:onClick="stores"
+        android:text="Stores"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="#2e8b57"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="51dp"
+        android:id="@+id/stores"
+        android:layout_below="@+id/jobs"
+        android:layout_alignLeft="@+id/jobs"
+        android:layout_alignStart="@+id/jobs" />
+
+    <Button
+        android:onClick="jobs"
+        android:text="Jobs"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="#2e8b57"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/jobs"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:onClick="other"
+        android:text="Other Resources"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="#2e8b57"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/other"
+        android:layout_below="@+id/restaurants"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+
+
